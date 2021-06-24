@@ -1,0 +1,34 @@
+.Card{
+    border-radius: 20px; 
+     height: 25vh;
+}
+
+.gifJayZ{
+    background-image: url(../../assets/TeteDaffiche/gifJayZ.gif.crdownload);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.MickaelJacksonBg{
+    background-image: url(../../assets/TeteDaffiche/mickaelJackson.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Amir{
+    background-image: url(../../assets/TeteDaffiche/amir.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.Jennifer{
+    background-image: url(../../assets/TeteDaffiche/Jenifer-Lunatique.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.daftPunk{
+    background-image: url(../../assets/TeteDaffiche/daft-punk.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+

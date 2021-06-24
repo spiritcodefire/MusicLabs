@@ -1,0 +1,26 @@
+[
+    {
+        "ETIQUETTE_OK":"KO",
+        "GP_DATEPIECE":"1\/4\/2021",
+        "GP_REFINTERNE":"1000108707",
+        "LIEN_PDF":"",
+        "LIEN_FACTURE":"",
+        "GPT_CODEPORT":"A2P",
+        "GP_TOTALTTC":"186",
+        "T_LIBELLE":"granier",
+        "T_PRENOM":"clémence",
+        "T_TELEPHONE":"0667316537",
+        "T_ADRESSE1":"85 AVENUE GEORGES POMPIDOU",
+        "T_VILLE":"CAPBRETON",
+        "T_CODEPOSTAL":"40130",
+        "T_PAYS":"FR",
+        "MEJ_TRANSPORT":"Colissimo - Point",
+        "MESSAGE_XML":"30221 le numn ro de portable du destinataire est incorrect",
+        "GP_REFSUIVI":"007756",
+        "T_ADRESSE2":"",
+        "T_REGION":"",
+        "NOM_TRANSPORTEUR":"COL",
+        "STATUT":"12",
+        "GP_NATUREPIECEG":"CC"
+    }
+]

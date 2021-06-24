@@ -1,0 +1,14 @@
+.feu{
+    background-image: url(../../assets/feu.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 40px;
+    width: 40px;
+}
+
+.CardLancement{
+    border-radius: 20px; 
+    height: 48vh;
+    border: 1px solid rgb(233, 231, 231);
+    margin: 8px;
+}

@@ -1,0 +1,24 @@
+.span-inline{
+    display: inline; /* the default for span */
+    padding: 5px;
+}
+
+.cardAirDrop {
+    height: 70vh;
+    border-radius: 20px;
+    margin: 15px;
+}          
+
+.imgBorderRadius{
+    border-radius: 20px 20px 0px 0px;
+}
+
+.bodyCardAirDrop{
+    height: 13vh;
+}
+
+.footerCardAirDrop{
+    background-color: black;
+    height: 12vh;
+    border-radius: 0px 0px 20px 20px;
+}
