@@ -6,12 +6,13 @@ import ContextProvider from './hooks/ContextProvider'
 import NavBar from './components/NavBar'
 import Home from './components/APages/Home'
 import FundArtist from './components/APages/FundArtist'
-import Launch from './components/APages/Launch'
+import Launch from './components/Launch'
 import library from './components/APages/Library'
 import Signin from './components/APages/SignIn'
 import Signup from './components/APages/SignUp'
 import AdminArtist from './components/APages/AdminArtist'
 import Footer from './components/Footer'
+import Product from './components/LaunchBig'
 
 function App() {
 
@@ -30,6 +31,7 @@ function App() {
           <Route path="/Artist" exact component={Signin}/>
           <Route path="/Signup" exact component={Signup}/>
           <Route path="/AdminArtist" exact component={AdminArtist}/>
+          <Route path="/product/:id" exact component={Product}/>
 
         </Switch>
         <Footer />

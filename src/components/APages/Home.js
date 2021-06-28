@@ -3,7 +3,7 @@ import { Context } from '../../hooks/ContextProvider'
 // import { ReactVideo } from "reactjs-media";
 // import Video from "../../assets/video.mp4"
 import Tetedaffiche from "../TeteDaffiche/Tetedaffiche"
-import Lancement from '../Lancement'
+import Lancement from '../Launch'
 import AirDrop from '../AirDrop/Index'
 import Librairie from '../Librairie/Index'
 
