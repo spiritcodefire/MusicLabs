@@ -14,7 +14,7 @@ const CardTeteDaffiche = (props) => {
     return (
 
 
-            <div className="col-2 " >
+            <div className="col-sm-12 col-md-2" >
                 <Link to={`/tetedaffiche/` + props.id}>
                     <div className="m-2 Card" style={{
                     backgroundImage: `url(${props.Picture})` ,

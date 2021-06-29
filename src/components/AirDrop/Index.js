@@ -12,7 +12,7 @@ const Index = () => {
 
 
     return (
-        <div className="m-5">
+        <div className="">
             <span className="h2 span-inline"> WIN YOUR MUSICAL NFT AIR-DROP</span><span style={{ color: "transparent"}}  className="win h2 span-inline">na nah</span>
 
             <div className="container-fluid">

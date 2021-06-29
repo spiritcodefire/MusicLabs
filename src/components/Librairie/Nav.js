@@ -1,64 +1,34 @@
 import React from 'react'
 import "./Librairie.css"
-import Nav from 'react-bootstrap/Nav'
-// import NavDropdown from 'react-bootstrap/NavDropdown'
 
-const NavSort = () => {
+
+const NavSort = (props) => {
+    console.log(props);
+    const aspireClick = (e) => {
+        // console.log(e.target.value);
+        if(props.OnClick)
+            props.OnClick(e);  
+    }
     return (
         <>
-            <Nav variant="pills" activeKey="1" >
+            <div className=" px-4 mx-2 h1">Explore</div>
+                <div  className="container p-4 text-white">
+                    <div className="row justify-content-between">
 
-                <div className=" px-4 mx-2 h1">Explore</div>
-
-                <Nav.Item>
-                    <div className="btnArt px-4 mx-2 bg-dark text-white">Pop</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Rap</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Classique</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Rock</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Electro</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">R&B</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Latino</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Métal</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Musique de Film</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Jazz</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Autre type</div>
-                </Nav.Item>
-
-                <Nav.Item>
-                    <div className="btnArt px-4  mx-2">Filter & Sort</div>
-                </Nav.Item>
-
-            </Nav>
+                        <input onClick={aspireClick} type="button" value="Tous"         className="btnArt px-4 mx-1 bg-dark text-white"></input>
+                        <input onClick={aspireClick} type="button" value="Pop"          className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Classique"    className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Rock"         className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Eletro"       className="btnArt px-4 mx-1 bg-white"></input>
+                       
+                        <input onClick={aspireClick} type="button" value="Latino"       className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Metal"        className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Film"         className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Jazz"         className="btnArt px-4 mx-1 bg-white"></input>
+                        <input onClick={aspireClick} type="button" value="Autre"        className="btnArt px-4 mx-1 bg-white"></input>
+                        
+                    </div>	
+            </div>
         </>
     )
 }

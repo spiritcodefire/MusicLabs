@@ -10,7 +10,7 @@ const CardLancement = (props) => {
 
     return (
         <>
-            <div className="col-md-2 CardLancement p-0">  
+            <div className="col-sm-12 col-md-2 m-1 CardLancement p-0">  
                 <Link to={'/launch/' + props.id}>
                     
                     {/* IMAGE HEADER */}
@@ -19,7 +19,7 @@ const CardLancement = (props) => {
                     </div> 
 
                     {/* PLAYER AUDIO */}
-                    <div className="border " style={{backgroundColor: "F1F3F4"}}>
+                    <div className="border" style={{backgroundColor: "F1F3F4"}}>
                         <ReactAudioPlayer
                             src={music}
                             // autoPlay

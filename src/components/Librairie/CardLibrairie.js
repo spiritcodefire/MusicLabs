@@ -8,7 +8,7 @@ const CardLibrairie = (props) => {
    
     return (
         <>
-            <div className="col-md-2 CardLancement p-0">  
+            <div className="col-md-2 CardLancement p-0 m-1">  
                 <Link to={'/librairie/' + props.id}>
                     <div className="row justify-content-center" > 
                         <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 315+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }} />
