@@ -2,16 +2,73 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
+import Modal from 'react-bootstrap/Modal'
+import Row from 'react-bootstrap/Row'
+import Col from 'react-bootstrap/Col'
+import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Nav from 'react-bootstrap/Nav'
 import {Context} from '../hooks/ContextProvider'
 
+function MyVerticallyCenteredModal(props) {
+    return (
+      <Modal
+        {...props}
+        size="lg"
+        aria-labelledby="contained-modal-title-vcenter"
+        centered
+      >
+
+      
+        <Modal.Body className="show-grid">
+        <Container>
+          <Row>
+            <h1>Connect your wallet</h1>
+            <p className="font-bolder">Connect with one of available wallet providers or create an ew wallet. What is a wallet ?</p>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                Torus
+            </div>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                Portis
+            </div>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                WalletConnect
+            </div>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                Coinbase
+            </div>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                Fortmatic
+            </div>
+            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
+                Autre
+            </div>
+            <Col xs={12} md={8}>
+              .col-xs-12 .col-md-8
+            </Col>
+            <Col xs={6} md={4}>
+              .col-xs-6 .col-md-4
+            </Col>
+          </Row>
+
+
+        </Container>
+      </Modal.Body>
+        
+        <Modal.Footer>
+          <Button variant="info" onClick={props.onHide}>Close</Button>
+        </Modal.Footer>
+      </Modal>
+    );
+  }
+
 const NavBar = () => {
+    const [modalShow, setModalShow] = React.useState(false);
     const context = React.useContext(Context)
     console.log(context.NavBar);
     return (
-        <div className=" ">
+        <>
 
             {context.NavBar &&
 
@@ -51,6 +108,8 @@ const NavBar = () => {
 
                         <Nav.Link className="mx-3" as={Link} to="/library">library</Nav.Link>
 
+                        <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  >Connect Your Wallet</Nav.Link>
+
 
                     </Nav>
                     <Form inline>
@@ -62,8 +121,11 @@ const NavBar = () => {
                 
             </Navbar>
 
+            
         }
-        </div>
+          
+                <MyVerticallyCenteredModal  show={modalShow} onHide={() => setModalShow(false)} />
+        </>
     )
 }
 export default NavBar
