@@ -1,30 +1,34 @@
 import React from 'react' ;
 import "./TeteDaffiche.css" ;
+import CardTeteDaffiche from './CardTeteDaffiche'
+// import MickaelJacksonPicture from '../../assets/TeteDaffiche/mickaelJackson.jpg'
+import DataMusic from "../../utils/dataMusic" ;
 
 const Tetedaffiche = () => {
+
+       // ne prend que les item ou AirDrop === TRUE et IsActive === TRUE
+       let SelectionTeteDaffiche = DataMusic.filter((item) => {
+         return item.TeteDaffiche === true && item.IsActive === true
+      });
+       console.log(SelectionTeteDaffiche);
+
     return (
         <div className="bg-light" >
            <div className="container-fluid border border-light">
                <div className="row justify-content-center">
-                  <div className="col-2 m-2 Card MickaelJacksonBg">
-                     <h5 className="text-white mt-3">Mickael Jackson</h5>
-                  </div>
 
-                  <div className="col-2  m-2 Card gifJayZ ">
-                     <h5 className="text-white mt-3">Jay Z New Album</h5>
-                  </div>
+                  { SelectionTeteDaffiche.slice(0).reverse().map(item => { 
+                     return(   
+                     
+                           <CardTeteDaffiche
+                              key={item.id}
+                              id={item.id}
+                              NameCreator={item.NameCreator} 
+                              Picture={item.Picture}
+                           />                  
+                     )})
+                  }
 
-                  <div  className="col-2 bg-success m-2 Card Amir">
-                  <h5 className="text-secondary mt-3">Amir</h5>
-                  </div>
-
-                  <div  className="col-2 bg-dark m-2 Card Jennifer">
-                  <h5 className="text-white mt-3">jennifer</h5>
-                  </div>
-
-                  <div  className="col-2 bg-dark m-2 Card daftPunk">
-                  <h5 className="text-white mt-3">Daft Punk</h5>
-                  </div>
 
                </div>
            </div>

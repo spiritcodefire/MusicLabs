@@ -1,93 +1,39 @@
 import React from 'react'
-import CardTest from '../Launch/CardLancement'
-
+import CardTest from './CardLibrairie'
 import "./Librairie.css"
-import Nav from 'react-bootstrap/Nav'
-import NavDropdown from 'react-bootstrap/NavDropdown'
+import DataMusic from "../../utils/dataMusic" ;
 
 import NavSort from './Nav' ;
 
 const Librairie = () => {
 
+    // ne prend que les item ou AirDrop === TRUE et IsActive === TRUE
+    let SelectionLibrairie = DataMusic.filter((item) => {
+        return item.Librairie === true && item.IsActive === true
+    });
+        console.log(SelectionLibrairie);
+
     return (
         <div className="container-fluid">
             <NavSort />
             <div className="row justify-content-center">
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
-        < CardTest />
+
+            { SelectionLibrairie.slice(0).reverse().map(item => { 
+                return(
+                < CardTest
+                    key={item.id}
+                    id={item.id}
+                    NameMusic={item.NameMusic}
+                    DescriptionNft={item.DescriptionNft}
+                    NameAlbumOrCollection={item.NameAlbumOrCollection} 
+                    NameCreator={item.NameCreator} 
+                    Price={item.Price}
+                    NameAlbumOrCollection={item.NameAlbumOrCollection}
+                />
+                )
+            })
+            }
+         
 
             </div>
            

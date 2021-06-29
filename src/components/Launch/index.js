@@ -1,12 +1,12 @@
-import React from 'react'
-import './Lancement.css'
-import Cardlancement from './CardLancement'
-import DataMusic from "../../utils/dataMusic"
+import React from 'react' ;
+import './Lancement.css' ; 
+import Cardlancement from './CardLancement' ;
+import DataMusic from "../../utils/dataMusic" ;
 
 const Lancement = () => {
         // sort all data and take that if item.launch === true
         let SelectionLaunch = DataMusic.filter((item) => {
-        return item.Launch === true 
+        return item.Launch === true && item.IsActive === true
       });
       console.log(SelectionLaunch);
 
@@ -30,9 +30,10 @@ const Lancement = () => {
                       NameAlbumOrCollection={item.NameAlbumOrCollection} 
                       NameCreator={item.NameCreator} 
                       Price={item.Price}
+                      Date={item.Date}
                   />
                 )}
-              )
+               )
               }
             
             </div>

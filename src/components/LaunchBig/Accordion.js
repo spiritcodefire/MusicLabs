@@ -11,12 +11,12 @@ const Index = () => {
                 <Card>
                     <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="0">
-                        Bids
+                        Combien Y'a til de particule disponible
                     </Accordion.Toggle>
                     </Card.Header>
 
                     <Accordion.Collapse eventKey="0">
-                    <Card.Body>Hello! I'm the body</Card.Body>
+                    <Card.Body>10.000 particules ont été créer</Card.Body>
                     </Accordion.Collapse> 
                 </Card>
 
@@ -27,20 +27,20 @@ const Index = () => {
                     </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="1">
-                    <Card.Body>Hello! I'm another body</Card.Body>
+                    <Card.Body>Texte explicatif de l'artist</Card.Body>
                     </Accordion.Collapse>
                 </Card>
 
-                <Card>
+                {/* <Card>
                     <Card.Header>
                     <Accordion.Toggle as={Button} variant="link" eventKey="2">
                         History
                     </Accordion.Toggle>
                     </Card.Header>
                     <Accordion.Collapse eventKey="2">
-                    <Card.Body>Hello! I'm another body</Card.Body>
+                    <Card.Body>mettre le timer </Card.Body>
                     </Accordion.Collapse>
-                </Card>
+                </Card> */}
 
             </Accordion>
         </div>

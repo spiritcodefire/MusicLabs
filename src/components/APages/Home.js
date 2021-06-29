@@ -27,12 +27,15 @@ const Home = () => {
             </div> */}
 
             <Tetedaffiche />
+
             <Lancement />
+
             <div className="container-fluid">
                 <hr />   
             </div>
             
             <AirDrop />
+            
             <Librairie />
 
 

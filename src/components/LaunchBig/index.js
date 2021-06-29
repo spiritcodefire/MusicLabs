@@ -1,7 +1,14 @@
 import React from 'react'
+
+import ReactAudioPlayer from "react-audio-player";
 import Accordion from './Accordion'
 import "./product.css"
+
 import dataMusic from '../../utils/dataMusic'
+import music from '../../assets/songMjackson.mp3'
+
+
+import ReactPlayer from 'react-player'
 
 const index = (props) => {
     
@@ -15,8 +22,25 @@ const index = (props) => {
 
                     <div className="col-8 border" style={{height: "800px"}}>
                         <div className="row justify-content-center">
-                            <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh', width: 60+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
+                            
+                            <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh', width: 60+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }}>
+                                <div className="row justify-content-center align-items-center">
+                                    <div className="col-3 align-self-center">
+                                        <ReactAudioPlayer
+                                            src={music}
+                                            // autoPlay
+                                            controls
+                                        />
+                                        <ReactPlayer file={music} />
+                                    </div>
+                                </div>
+                                
+
+                            </div>
+                            
                         </div>
+
+                        <h6 className="text-center bg-danger">integrer player audio ou player video</h6>
                     </div>
 
                     <div className="col-4">
@@ -62,21 +86,36 @@ const index = (props) => {
                                     borderRadius: '48px',
                                     backgroundColor: 'rgb(0, 102, 255)',}}
                                 >
-                                    Bye for XXX ETH
+                                    Buy for XXX ETH
                                 </div>
 
                             </div>
 
                             <div className="col-6">
 
+                                <div  className="font-weight-bold text-white text-center p-3" style={{
+                                        borderRight: "1px #ececec solid",
+                                        border: 'grey 1px solid',
+                                        borderRadius: '48px',
+                                        backgroundColor: 'black',}}
+                                    >
+                                        Depuis 2H 24 Min 365 Sec
+                                    </div>
+                            </div>  
+
+                            <div className="col-12 mt-3">
+
                                 <div className="font-weight-bold text-center p-3 btnBids" style={{
                                     borderRadius: '48px',
                                     backgroundColor: 'rgba(0, 102, 255, 0.15)',
                                     color: 'rgb(0, 102, 255)'
-                                    }}>Place a bid
+                                    }}>
+                                     <h6>il reste <span className="text-danger">28</span>  particule disponible</h6>   
                                 </div>
-
+                                
                             </div>
+
+                          
 
                         </div>
                     </div>
