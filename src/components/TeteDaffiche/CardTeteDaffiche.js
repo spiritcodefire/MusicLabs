@@ -12,8 +12,6 @@ const CardTeteDaffiche = (props) => {
     console.log(SelectionCardTeteDaffiche);
 
     return (
-
-
             <div className="col-sm-12 col-md-2" >
                 <Link to={`/tetedaffiche/` + props.id}>
                     <div className="m-2 Card" style={{
@@ -24,8 +22,6 @@ const CardTeteDaffiche = (props) => {
                     </div>
                 </Link>
             </div>
-
-     
     )
 }
 

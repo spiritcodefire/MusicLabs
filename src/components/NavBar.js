@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+
 import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
 import Modal from 'react-bootstrap/Modal'
@@ -10,6 +11,12 @@ import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Nav from 'react-bootstrap/Nav'
 import {Context} from '../hooks/ContextProvider'
+import Torus from '../assets/logoTorus.svg'
+import portis from '../assets/logoPortis.svg'
+import arcEnCiel from '../assets/arc-en-ciel.png'
+import Coinbase from '../assets/coinBase.svg'
+import fortMatic from '../assets/fortmatic.svg'
+
 
 function MyVerticallyCenteredModal(props) {
     return (
@@ -21,40 +28,59 @@ function MyVerticallyCenteredModal(props) {
       >
 
       
-        <Modal.Body className="show-grid">
+    <Modal.Body className="show-grid">
         <Container>
-          <Row>
-            <h1>Connect your wallet</h1>
-            <p className="font-bolder">Connect with one of available wallet providers or create an ew wallet. What is a wallet ?</p>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                Torus
-            </div>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                Portis
-            </div>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                WalletConnect
-            </div>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                Coinbase
-            </div>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                Fortmatic
-            </div>
-            <div className="border border-secondary shadow-lg rounded-lg" style={{height: "200px", width: "200px"}}>
-                Autre
-            </div>
-            <Col xs={12} md={8}>
-              .col-xs-12 .col-md-8
-            </Col>
-            <Col xs={6} md={4}>
-              .col-xs-6 .col-md-4
-            </Col>
-          </Row>
+            <Row>
+                <h1>Connect your wallet</h1>
+                <p className="font-bolder">Connect with one of available wallet providers or create an ew wallet. What is a wallet ?</p>
+            
+                <Col xs={12} md={4}>
+                    
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        <img height="150px"  src={Torus} alt="img Torus" />
+                       <p>Torus</p> 
+                    </div>
+                </Col>
+                <Col xs={12} md={4}>
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        <img   height="150px"  src={portis} alt="portis" />
+                        <p>Portis</p>
+                    </div>
+                </Col>
+
+                <Col xs={12} md={4}>
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        <img  height="150px"  src={arcEnCiel} alt="WalletConnect" />
+                        <p>WalletConnect</p>
+                    </div>
+                </Col>
+    
+                <Col xs={12} md={4}>
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        <img  height="150px"  src={Coinbase} alt="Coinbase" />
+                        <p>Coinbase</p>
+                    </div>
+                </Col>
+
+                <Col xs={12} md={4}>
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        <img src={fortMatic}  height="150px"  alt="Fortmatic" />
+                        <p>Fortmatic</p>
+                    </div>
+                </Col>
+
+                <Col xs={12} md={4}>
+                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                        Autre
+                    </div>
+                </Col>
+
+            </Row>    
+        </Container>     
 
 
-        </Container>
-      </Modal.Body>
+       
+    </Modal.Body>
         
         <Modal.Footer>
           <Button variant="info" onClick={props.onHide}>Close</Button>
@@ -107,6 +133,8 @@ const NavBar = () => {
                         <Nav.Link className="mx-3" as={Link} to="/Launch">Launch</Nav.Link>
 
                         <Nav.Link className="mx-3" as={Link} to="/library">library</Nav.Link>
+
+                        <Nav.Link className="mx-3" as={Link} to="/create">Create</Nav.Link>
 
                         <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  >Connect Your Wallet</Nav.Link>
 
