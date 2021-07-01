@@ -28,11 +28,11 @@ const getTimeHours = (time) => ((time % daySeconds) / hourSeconds) | 0;
 const getTimeDays = (time) => (time / daySeconds) | 0;
 
 export default function CountDown(props) {
-  console.log(props);
+
 
   const stratTime = Date.now() / 1000; // use UNIX timestamp in seconds
  const traitementDate = new Date(props.DateTest).getTime() / 1000
- console.log(traitementDate);
+
 // const endTime = stratTime + traitementDate ; // use UNIX timestamp in seconds
  const endTime = stratTime + props.Date ; // use UNIX timestamp in seconds
 

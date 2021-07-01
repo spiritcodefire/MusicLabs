@@ -4,12 +4,11 @@ import DataMusic from "../../utils/dataMusic" ;
 import { Link } from 'react-router-dom' ;
 
 const CardTeteDaffiche = (props) => {
-    console.log(props);
 
     let SelectionCardTeteDaffiche = DataMusic.filter((item) => {
         return item.TeteDaffiche === true && item.IsActive === true
     });
-    console.log(SelectionCardTeteDaffiche);
+    
 
     return (
             <div className="col-sm-12 col-md-2" >

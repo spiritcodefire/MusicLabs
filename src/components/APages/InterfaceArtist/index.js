@@ -1,12 +1,26 @@
-import React from 'react'
+import React, {useEffect} from 'react';
+import { Context } from '../../../hooks/ContextProvider'
+import CreateAll from '../CreateNft/CreateNft'
 
-const index = () => {
+const Index = () => {
+
+const context = React.useContext(Context)
+
+useEffect(() => {
+
+    context.setNavBar(false); 
+    alert('confirmation mail requise')
+
+}, [])
+
 
     return (
-        <div>
-            Hello Admin
-        </div>
+        <>
+            
+            <CreateAll />
+
+        </>
     )
 }
 
-export default index
+export default Index

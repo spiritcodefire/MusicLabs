@@ -3,6 +3,7 @@ import React, {Fragment} from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom' ;
 import ContextProvider from './hooks/ContextProvider' ;
 import NavBar from './components/NavBar' ;
+import NavBarArtist from './components/APages/InterfaceArtist/NavBarArtist' ;
 import Home from './components/APages/Home' ;
 import FundArtist from './components/APages/FundArtist' ;
 
@@ -21,7 +22,12 @@ import Create from './components/APages/CreateNft/CreateNft'
 import CreateSingle from './components/CreateAll/Single'
 import CreateAlbum from './components/CreateAll/Album'
 import Artist from './components/APages/Artist/index'
-import interfaceArtist from './components/APages/InterfaceArtist/index'
+
+import interfaceArtist from './components/APages/InterfaceArtist/Index'
+import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
+import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'
+import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowdfunding'
+import Charity from './components/APages/InterfaceArtist/Charity/Charity'
 
 
 function App() {
@@ -30,7 +36,12 @@ function App() {
   <Fragment>
     <ContextProvider>
       <BrowserRouter>
+
+        {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
         <NavBar />
+        
+        {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST FALSE */}
+        <NavBarArtist />
 
         <Switch>
           
@@ -43,11 +54,17 @@ function App() {
           <Route path="/AdminArtist" exact component={AdminArtist}/>
           <Route path="/CountDown" exact component={CountDown}/>
           <Route path="/create" exact component={Create}/>
-          <Route path="/createsingle" exact component={CreateSingle}/>
-          <Route path="/createalbum" exact component={CreateAlbum}/>
+
           <Route path="/artist" exact component={Artist}/>
           <Route path="/Signup" exact component={Signup}/>
-          <Route path="/interfaceArtist" exact component={interfaceArtist}/>
+
+          <Route path="/interfaceArtist" exact component={CreateSingle}/>
+          <Route path="/Royalties" exact component={Royalties}/>
+          <Route path="/MyFans" exact component={MyFans}/>
+          <Route path="/createsingle" exact component={CreateSingle}/>
+          <Route path="/createalbum" exact component={CreateAlbum}/>
+          <Route path="/Crowdfunding" exact component={Crowdfunding}/>
+          <Route path="/Charity" exact component={Charity}/>
 
           <Route path="/airdrop/:id" exact component={AirDropBig}/>
           <Route path="/librairie/:id" exact component={LibraireBig}/>

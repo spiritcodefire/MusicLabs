@@ -8,7 +8,7 @@ const Lancement = () => {
         let SelectionLaunch = DataMusic.filter((item) => {
         return item.Launch === true && item.IsActive === true
       });
-      console.log(SelectionLaunch);
+   
 
     return (
         <div className="container-fluid">

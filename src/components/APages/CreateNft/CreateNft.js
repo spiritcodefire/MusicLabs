@@ -3,8 +3,10 @@ import { Link } from 'react-router-dom' ;
 import './CreateNft.css'
 import Undraw1 from '../../../assets/undraw1.svg' ;
 import Undraw2 from '../../../assets/undraw3.svg' ;
+
 const CreateNft = () => {
     return (
+
         <div className="container">
 
             <div className="row justify-content-center">

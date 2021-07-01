@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom'
+import {Context} from '../hooks/ContextProvider'
 
 import Navbar from 'react-bootstrap/Navbar'
 import Button from 'react-bootstrap/Button'
@@ -10,7 +11,7 @@ import Container from 'react-bootstrap/Container'
 import Form from 'react-bootstrap/Form'
 import FormControl from 'react-bootstrap/FormControl'
 import Nav from 'react-bootstrap/Nav'
-import {Context} from '../hooks/ContextProvider'
+
 import Torus from '../assets/logoTorus.svg'
 import portis from '../assets/logoPortis.svg'
 import arcEnCiel from '../assets/arc-en-ciel.png'
@@ -98,7 +99,7 @@ const NavBar = () => {
 
             {context.NavBar &&
 
-           
+           <div className="sticky-top">
             <Navbar bg="dark" expand="lg">
 
                 <Link to="/">
@@ -149,10 +150,11 @@ const NavBar = () => {
                 
             </Navbar>
 
-            
+            </div>
         }
           
                 <MyVerticallyCenteredModal  show={modalShow} onHide={() => setModalShow(false)} />
+            
         </>
     )
 }
