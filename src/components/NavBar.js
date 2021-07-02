@@ -129,13 +129,11 @@ const NavBar = () => {
 
 
 
-                        <Nav.Link className="mx-3" as={Link} to="/FundArtist">FundArtist</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/playlist">My PlayList</Nav.Link>
 
-                        <Nav.Link className="mx-3" as={Link} to="/Launch">Launch</Nav.Link>
+                        {/* <Nav.Link className="mx-3" as={Link} to="/Launch">Launch</Nav.Link> */}
 
-                        <Nav.Link className="mx-3" as={Link} to="/library">library</Nav.Link>
-
-                        <Nav.Link className="mx-3" as={Link} to="/create">Create</Nav.Link>
+                        {/* <Nav.Link className="mx-3" as={Link} to="/library">library</Nav.Link> */}
 
                         <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  >Connect Your Wallet</Nav.Link>
 

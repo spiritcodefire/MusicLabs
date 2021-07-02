@@ -52,6 +52,8 @@ const NavBarArtist = () => {
 
                         <Nav.Link className="mx-3" as={Link} to="/MyFans">My Fans</Nav.Link>
 
+                        <Nav.Link className="mx-3" as={Link} onClick={()=> context.setNavBar(true) } to="/">Deconnexion</Nav.Link>
+
                     </Nav>
                     <Form inline>
                         <FormControl type="text" placeholder="Search by Elie" className="mr-sm-2" />

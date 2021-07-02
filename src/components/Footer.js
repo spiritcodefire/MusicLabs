@@ -12,7 +12,7 @@ const Footer = () => {
         <>  
             {context.NavBar && 
             
-                <div className="container-fluid text-white bg-secondary mt-5 sticky-bottom">
+                <div className="container-fluid text-white bg-secondary mt-5 fixed-bottom">
                     <div className="row justify-content-center">
 
                         <div className="col-xs-12 col-sm-6 col-md-3 rounded-lg m-1 shadow-lg ">

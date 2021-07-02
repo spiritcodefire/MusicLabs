@@ -39,10 +39,7 @@ const CardLancement = (props) => {
                             </div>
 
                             <div className="col-6 d-flex pt-5">
-                                <CountDown
-                                    Date={props.Date}
-                                    DateTest={props.DateTest}
-                                />
+                               
                             </div>
                         </div>
                     </div>

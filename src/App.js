@@ -28,6 +28,7 @@ import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
 import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'
 import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowdfunding'
 import Charity from './components/APages/InterfaceArtist/Charity/Charity'
+import MyPlaylist from './components/APages/MyPlaylist'
 
 
 function App() {
@@ -49,11 +50,11 @@ function App() {
 
           <Route path="/FundArtist" exact component={FundArtist}/>
           <Route path="/library" exact component={library}/>
-          {/* <Route path="/Artist" exact component={Signin}/> */}
           
           <Route path="/AdminArtist" exact component={AdminArtist}/>
           <Route path="/CountDown" exact component={CountDown}/>
           <Route path="/create" exact component={Create}/>
+          <Route path="/Playlist" exact component={MyPlaylist}/>
 
           <Route path="/artist" exact component={Artist}/>
           <Route path="/Signup" exact component={Signup}/>
@@ -61,7 +62,7 @@ function App() {
           <Route path="/interfaceArtist" exact component={CreateSingle}/>
           <Route path="/Royalties" exact component={Royalties}/>
           <Route path="/MyFans" exact component={MyFans}/>
-          <Route path="/createsingle" exact component={CreateSingle}/>
+          
           <Route path="/createalbum" exact component={CreateAlbum}/>
           <Route path="/Crowdfunding" exact component={Crowdfunding}/>
           <Route path="/Charity" exact component={Charity}/>

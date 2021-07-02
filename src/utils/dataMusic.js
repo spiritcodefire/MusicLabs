@@ -43,9 +43,6 @@ export default [
         Librairie: false,
         IsActive: true,
         Date: 543248,
-
-        
-
     },
     {
         id: 1,

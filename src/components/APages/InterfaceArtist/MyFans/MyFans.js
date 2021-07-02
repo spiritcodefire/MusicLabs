@@ -1,12 +1,17 @@
 import React from 'react' ;
-import { Link } from 'react-router-dom' ;
-import Undraw1 from '../../../../assets/undraw1.svg' ;
-import Undraw2 from '../../../../assets/undraw3.svg' ;
+import ImgTravaux from '../../../../assets/Travaux.jpg'
+
 
 const MyFans = () => {
     return (
         <div>
-            Hello My Fans
+            <div className="container-fluid">
+                <div className="row justify-content-center">
+                    <div className="col-12">
+                        <img src={ImgTravaux}  alt="" />
+                    </div>
+                </div>
+            </div>
         </div>
     )
 }

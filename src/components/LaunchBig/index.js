@@ -40,7 +40,7 @@ const index = (props) => {
                             
                         </div>
 
-                        <h6 className="text-center bg-danger">integrer player audio ou player video</h6>
+                        
                     </div>
 
                     <div className="col-4">
