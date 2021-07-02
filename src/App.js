@@ -8,7 +8,6 @@ import Home from './components/APages/Home' ;
 import FundArtist from './components/APages/FundArtist' ;
 
 import library from './components/APages/Library' ;
-import Signin from './components/KoComponent/SignInKO' ;
 import Signup from './components/APages/SignUp/index' ;
 import AdminArtist from './components/APages/AdminArtist' ;
 import Footer from './components/Footer' ;
@@ -23,7 +22,6 @@ import CreateSingle from './components/CreateAll/Single'
 import CreateAlbum from './components/CreateAll/Album'
 import Artist from './components/APages/Artist/index'
 
-import interfaceArtist from './components/APages/InterfaceArtist/Index'
 import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
 import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'
 import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowdfunding'
