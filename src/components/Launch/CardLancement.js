@@ -10,13 +10,12 @@ const CardLancement = (props) => {
 
     return (
         <>
-            <div className="col-sm-12 col-md-2 m-1 CardLancement p-0">  
+            <div className="col-sm-12 col-md-2 m-1  p-0" style={{minHeight: '400px'}}>  
                 <Link to={'/launch/' + props.id}>
                     
                     {/* IMAGE HEADER */}
-                    <div className="row justify-content-center" > 
-                        <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 315+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }} />
-                    </div> 
+                    <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }} />
+                    
 
                     {/* PLAYER AUDIO */}
                     <div className="border" style={{backgroundColor: "F1F3F4"}}>

@@ -20,7 +20,7 @@ import CountDown from './components/CountDown/CountDownMega' ;
 import Create from './components/APages/CreateNft/CreateNft'
 import CreateSingle from './components/CreateAll/Single'
 import CreateAlbum from './components/CreateAll/Album'
-import Artist from './components/APages/Artist/index'
+import Artist from './components/APages/Artist/Index'
 
 import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
 import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'

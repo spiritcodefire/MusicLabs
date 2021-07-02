@@ -3,8 +3,8 @@ import InputGroup from 'react-bootstrap/InputGroup'
 import FormControl from 'react-bootstrap/FormControl'
 import Button from 'react-bootstrap/Button'
 import OursPolaire from '../../../../assets/oursPolaire.jpg'
-import Vaccin from '../../../../assets/vaccin.jpg'
-import AfricainDetresse from '../../../../assets/quelque-155-millions-denfants-ages-de-moins-de-5-ans-souffrent-de-malnutrition-selon-la-food-and-agriculture-organization.jpg'
+import FreePalestine from '../../../../assets/free-palestine.jpg'
+import Veganisme from '../../../../assets/veganisme.jpg'
 
 const Charity = () => {
     return (
@@ -22,8 +22,8 @@ const Charity = () => {
                             <h3 className="mt-5">Choose your association</h3>
                         <div className="row justify-content-center my-3">
                             <div style={{background: `url(${OursPolaire})`,backgroundSize: "cover", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe " ></div>
-                            <div style={{background: `url(${AfricainDetresse})`,backgroundSize: "cover", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
-                            <div style={{background: `url(${Vaccin})`,backgroundSize: "cover", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
+                            <div style={{background: `url(${FreePalestine})`,backgroundSize: "contain", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
+                            <div style={{background: `url(${Veganisme})`,backgroundSize: "contain", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
                         </div>
                         <div className="my-5">
                             
