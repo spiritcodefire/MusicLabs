@@ -30,7 +30,7 @@ const Single = () => {
         <div className="container">
             <div className="row justify-content-center">
 
-                <div className="col-md-8 col-sm-12" style={{height:"300px"}}>
+                <div className="col-md-8 col-sm-12" >
 
                     <h1 className="m-5">Create single collectible</h1>
                     <p className="mt-5 h5">Uplodad file</p>
@@ -132,8 +132,8 @@ const Single = () => {
 
                 </div>
 
-                <div className="col-md-4 col-sm-12">
-                    <p className="h5 p-3 mt-5 sticky-top" style={{border:"1px grey solid", height: "300px", borderRadius: "20px"}}>Preview</p>
+                <div className="col-md-4 col-sm-12 mt-1 " style={{border:"1px grey solid", minHeight: "100px", borderRadius: "20px"}}>
+                    <p className="h5 p-3 mt-5" >Preview</p>
                    
                 </div>
 

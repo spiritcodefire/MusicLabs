@@ -9,7 +9,7 @@ const index = () => {
     <>
         <div className='container my-5 ' >
             <div className="row justify-content-center">
-                <div className="col-8 border border-secondary border-spe p-4" >
+                <div className="col-md-8 border border-secondary border-spe p-4" >
                     <Form>
                         <h1>sign Up</h1>
                         <Form.Row>

@@ -91,7 +91,7 @@ function MyVerticallyCenteredModal(props) {
 const Index = () => {
     const [modalShow, setModalShow] = React.useState(false);
     return (
-        <div className="container">
+        <div className="container" style={{minHeight: "78vh"}}>
 
             <div className="row justify-content-center">
                 <div className="col-md-10 col-sm-12 p-3">

@@ -4,13 +4,14 @@ import { Link } from 'react-router-dom'
 import ReactAudioPlayer from "react-audio-player";
 import music from '../../assets/songMjackson.mp3' ;
 import CountDown from '../CountDown/CountDownMega'
+import ProgressBar from 'react-bootstrap/ProgressBar'
 
 
 const CardLancement = (props) => {
 
     return (
         <>
-            <div className="col-sm-12 col-md-2 m-1  p-0" style={{minHeight: '400px'}}>  
+            <div className="col-sm-12 col-md-2 m-1 shadow p-0" style={{minHeight: '400px',  borderRadius: "0px 0px 20px 20px"}}>  
                 <Link to={'/launch/' + props.id}>
                     
                     {/* IMAGE HEADER */}
@@ -18,7 +19,7 @@ const CardLancement = (props) => {
                     
 
                     {/* PLAYER AUDIO */}
-                    <div className="border" style={{backgroundColor: "F1F3F4"}}>
+                    <div className="border text-center" style={{backgroundColor: "#F1F3F4"}}>
                         <ReactAudioPlayer
                             src={music}
                             // autoPlay
@@ -32,13 +33,14 @@ const CardLancement = (props) => {
                         {/* <p >Prix de la part/ Nombre de part</p> */}
                         <div className="row justify-content-between">
                            
-                            <div className="col-6 ">
+                            <div className="col-6">
                                 <p>{props.NameMusic}</p>
                                 <p>Buy{props.Price}wETH</p>
                             </div>
 
-                            <div className="col-6 d-flex pt-5">
-                               
+                            <div className="col-6">
+                                <p>168 part / 10.000</p>
+                                <ProgressBar striped variant="warning" animated now={60} />
                             </div>
                         </div>
                     </div>

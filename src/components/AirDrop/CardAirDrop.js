@@ -15,7 +15,7 @@ const CardAirDrop = (props) => {
 
     return (
        
-            <div className="col-md-3 border cardAirDrop p-0">
+            <div className="col-md-3 border cardAirDrop p-0 shadow">
                 <Link to={'/airdrop/' + props.id}>
                     <div className="img-fluid imgBorderRadius" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 40+'vh', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
 
@@ -30,18 +30,14 @@ const CardAirDrop = (props) => {
                     <div className="footerCardAirDrop">
                         <div className="row justify-content-start m-3">
 
-                            <div className="col-5 mx-2">
-                                <h5 className="text-secondary">Depuis</h5>
-                                <h5 className="text-white">{props.Price} ETH</h5>
+                            <div className="col-6">
+                                <h5 className="text-secondary">Since</h5>
+                                <h5 className="text-white">10M 24Sec</h5>
                             </div>
-                            <div className="col-5 mx-2">
-                                <h5 className="text-secondary">Reste à gagner</h5>
-                                <h5 className="text-white">{props.Price} ETH</h5>
+                            <div className="col-6">
+                                <h5 className="text-secondary">remains to be won</h5>
+                                <h5 className="text-white">4888 </h5>
                             </div>
-
-                            {/* <div className="col-3 mx-2">
-                                <h5 className="text-secondary">Ending in</h5>
-                            </div> */}
 
                         </div>
                         
