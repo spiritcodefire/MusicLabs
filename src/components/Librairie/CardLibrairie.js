@@ -1,6 +1,8 @@
 import React from 'react'
 import './Librairie.css'
 import { Link } from 'react-router-dom'
+import ReactAudioPlayer from "react-audio-player";
+import music from '../../assets/songMjackson.mp3' ;
 
 const CardLibrairie = (props) => {
 
@@ -15,9 +17,19 @@ const CardLibrairie = (props) => {
                     <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0 ,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }} />
 
                     {/* CENTER */}
-                    <div > 
-                        <div className="img-fluid rounded-circle m-4" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?crypto`})`, height: 40+'px', width: 40+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
-                    </div> 
+                    
+                        {/* <div className="col-3" >
+                            <div className="img-fluid rounded-circle m-4" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?crypto`})`, height: 40+'px', width: 40+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
+                        </div> */}
+                        <div style={{backgroundColor: "#F1F3F4"}}>
+                            <ReactAudioPlayer
+                                    src={music}
+                                    // autoPlay
+                                    controls
+                            />
+                        </div>
+                       
+                    
 
                     {/* FOOTER */}
                     <div className="p-2 text-white" style={{background: "black" , height: "100px", borderRadius: "0px 0px 20px 20px"}}>

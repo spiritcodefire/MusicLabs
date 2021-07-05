@@ -14,16 +14,11 @@ const index = (props) => {
             <div className="container-fluid bg-info">
                 <div className="row justify-content-center">
 
-                    <div className="col-8 border" style={{height: "800px"}}>
-                        <div className="row justify-content-center">
-                            
-                            <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh', width: 60+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
-                            
-                        </div>
-                        <h6 className="text-center bg-danger">integrer player audio ou player video</h6>
+                    <div className="col-sm-12 col-md-8" style={{height: "800px"}}> 
+                            <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-sm-12 col-md-4">
                         <div className="mt-5">
                             <div className="container-fluid">
                                 <div className="row">

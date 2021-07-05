@@ -15,6 +15,7 @@ import CardLibrairie from './CardLibrairie'
                             NameAlbumOrCollection={item.NameAlbumOrCollection} 
                             NameCreator={item.NameCreator} 
                             Price={item.Price}
+                            
                         />
                     ))}
                 </div>

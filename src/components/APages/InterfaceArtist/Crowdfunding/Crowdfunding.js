@@ -26,6 +26,13 @@ const Crowdfunding = () => {
                                 </InputGroup.Prepend>
                                 <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
                             </InputGroup>
+                        <h2 className="text-center mt-3">how much is this percentage worth of money ?</h2>
+                            <InputGroup size="lg">
+                                <InputGroup.Prepend>
+                                    <InputGroup.Text >$</InputGroup.Text>
+                                </InputGroup.Prepend>
+                                <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+                            </InputGroup>
 
                             <p>look at examples </p>
                             <h1>Get CrownFunding</h1>

@@ -15,35 +15,25 @@ const index = (props) => {
     let IdSelected = props.match.params.id
     const MusicById = dataMusic.find(data=> data.id == IdSelected)  // récupère ce qui suit mon url
     console.log(MusicById);
+
     return (
         <div>
             <div className="container-fluid">
                 <div className="row justify-content-center">
 
-                    <div className="col-8 border" style={{height: "800px"}}>
-                        <div className="row justify-content-center">
-                            
-                            <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh', width: 60+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }}>
-                                <div className="row justify-content-center align-items-center">
-                                    <div className="col-3 align-self-center">
-                                        <ReactAudioPlayer
-                                            src={music}
-                                            // autoPlay
-                                            controls
-                                        />
-                                        <ReactPlayer file={music} />
-                                    </div>
-                                </div>
-                                
-
+                    <div className=" col-sm-12 col-md-8 border" style={{height: "800px"}}>
+                        <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }}>
+                            <div className="row justify-content-center">
+                                <ReactAudioPlayer
+                                    src={music}
+                                    // autoPlay
+                                    controls
+                                />
                             </div>
-                            
                         </div>
-
-                        
                     </div>
 
-                    <div className="col-4">
+                    <div className="col-sm-12 col-md-4 ">
                         <div className="mt-5">
                             <div className="container-fluid">
                                 <div className="row">

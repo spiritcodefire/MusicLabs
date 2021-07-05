@@ -47,7 +47,7 @@ const CardAirDrop = (props) => {
                                 src={music}
                                 // autoPlay
                                 controls
-                            />
+                                />
                         </div>
                   
 
