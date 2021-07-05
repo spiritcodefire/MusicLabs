@@ -4,7 +4,7 @@
 }
 
 .cardAirDrop {
-    height: 70vh;
+
     border-radius: 20px;
     margin: 15px;
 }          
@@ -13,9 +13,9 @@
     border-radius: 20px 20px 0px 0px;
 }
 
-.bodyCardAirDrop{
+/* .bodyCardAirDrop{
     height: 13vh;
-}
+} */
 
 .footerCardAirDrop{
     background-color: black;
