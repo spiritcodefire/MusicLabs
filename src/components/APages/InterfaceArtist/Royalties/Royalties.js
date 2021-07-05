@@ -29,7 +29,7 @@ const Royalties = () => {
 
                     <div className="col-md-5 col-sm-12 rounded-spe p-4 m-1 text-dark" style={{height: "300px"}}>
                         <Link to="/Crowdfunding">
-                            <h3>Get financing</h3>
+                            <h3>Get CrownFunded</h3>
                             <figure className="text-center text-dark">
                                 <img src={Undraw2} height="200px" alt="" />
                             </figure>

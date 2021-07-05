@@ -25,8 +25,8 @@ const Charity = () => {
                             <div style={{background: `url(${FreePalestine})`,backgroundSize: "contain", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
                             <div style={{background: `url(${Veganisme})`,backgroundSize: "contain", height: "30Vmin", minWidth: '300px', minHeight: '300px'}} className="col-sm-12 col-md-3 m-1 border rounded-spe "></div>
                         </div>
+
                         <div className="my-5">
-                            
                             <div className="mt-3">
                                 <Button variant="warning" size="lg" block>
                                     Connect Your Wallet
