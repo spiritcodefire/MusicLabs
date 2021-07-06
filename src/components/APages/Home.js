@@ -6,6 +6,7 @@ import Tetedaffiche from "../TeteDaffiche/Tetedaffiche"
 import Lancement from '../Launch'
 import AirDrop from '../AirDrop/Index'
 import Librairie from '../Librairie/Index'
+import Invest from '../Invest/Index'
 
 const Home = () => {
     const context = useContext(Context)
@@ -38,7 +39,7 @@ const Home = () => {
             
             <Librairie />
 
-
+            <Invest />
 
         </>
     )

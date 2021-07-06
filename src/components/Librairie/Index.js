@@ -4,7 +4,6 @@ import DataMusic from "../../utils/dataMusic" ;
 import MapLibrairie from './MapLibrairie'
 import Boutique from '../../assets/png/boutique.png'
 
-
 const Librairie = () => {
 
     const [data, setData] = useState(DataMusic)

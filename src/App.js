@@ -28,6 +28,7 @@ import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowd
 import Charity from './components/APages/InterfaceArtist/Charity/Charity'
 import MyPlaylist from './components/APages/MyItems/MyPlaylist'
 import MyItems from './components/APages/MyItems/Index'
+import Verified from './components/APages/Verified/Index'
 
 
 function App() {
@@ -54,7 +55,6 @@ function App() {
           <Route path="/CountDown" exact component={CountDown}/>
           <Route path="/create" exact component={Create}/>
           <Route path="/Playlist" exact component={MyPlaylist}/>
-
           <Route path="/artist" exact component={Artist}/>
           <Route path="/Signup" exact component={Signup}/>
 
@@ -66,6 +66,7 @@ function App() {
           <Route path="/Crowdfunding" exact component={Crowdfunding}/>
           <Route path="/Charity" exact component={Charity}/>
           <Route path="/Items" exact component={MyItems}/>
+          <Route path="/verified" exact component={Verified}/>
 
           <Route path="/airdrop/:id" exact component={AirDropBig}/>
           <Route path="/librairie/:id" exact component={LibraireBig}/>

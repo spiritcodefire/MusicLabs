@@ -64,13 +64,8 @@ const index = () => {
                             <Form.File id="exampleFormControlFile1"  />
                         </Form.Group> */}
 
-                        <p className="mt-5 h5">Uplodad your Face</p>
-                        <div className="" style={{borderRadius: "16px", border: "2px dashed rgba(4,4,4,0.1"}}>
-                        <p className="text-secondary text-center mt-4">MP3, MP4, Max 100mb</p> 
-                            <div className="row justify-content-center m-5">
-                                <div className="col-auto"><button className="row justify-content-center mx-auto btn btn-primary" >Choose File</button></div>
-                            </div>
-                        </div>
+                        
+
                         <div className="text-center m-3">
                             <Link to="/interfaceArtist">
                                 <Button   variant="primary" type="submit">

@@ -28,52 +28,55 @@ function MyVerticallyCenteredModal(props) {
       
     <Modal.Body className="show-grid">
         <Container>
+            <Link to="/interfaceArtist">
             <Row>
-                <h1>Connect your wallet</h1>
-                <p className="font-bolder">Connect with one of available wallet providers or create an ew wallet. What is a wallet ?</p>
-            
-                <Col xs={12} md={4}>
-                    
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        <img height="150px"  src={Torus} alt="img Torus" />
-                       <p>Torus</p> 
-                    </div>
-                </Col>
-                <Col xs={12} md={4}>
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        <img   height="150px"  src={portis} alt="portis" />
-                        <p>Portis</p>
-                    </div>
-                </Col>
+                
+                    <h1>Connect your wallet</h1>
+                    <p className="font-bolder">Connect with one of available wallet providers or create an ew wallet. What is a wallet ?</p>
+                
+                    <Col xs={12} md={4}>
+                        
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            <img height="150px"  src={Torus} alt="img Torus" />
+                        <p>Torus</p> 
+                        </div>
+                    </Col>
+                    <Col xs={12} md={4}>
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            <img   height="150px"  src={portis} alt="portis" />
+                            <p>Portis</p>
+                        </div>
+                    </Col>
 
-                <Col xs={12} md={4}>
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        <img  height="150px"  src={arcEnCiel} alt="WalletConnect" />
-                        <p>WalletConnect</p>
-                    </div>
-                </Col>
-    
-                <Col xs={12} md={4}>
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        <img  height="150px"  src={Coinbase} alt="Coinbase" />
-                        <p>Coinbase</p>
-                    </div>
-                </Col>
+                    <Col xs={12} md={4}>
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            <img  height="150px"  src={arcEnCiel} alt="WalletConnect" />
+                            <p>WalletConnect</p>
+                        </div>
+                    </Col>
+        
+                    <Col xs={12} md={4}>
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            <img  height="150px"  src={Coinbase} alt="Coinbase" />
+                            <p>Coinbase</p>
+                        </div>
+                    </Col>
 
-                <Col xs={12} md={4}>
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        <img src={fortMatic}  height="150px"  alt="Fortmatic" />
-                        <p>Fortmatic</p>
-                    </div>
-                </Col>
+                    <Col xs={12} md={4}>
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            <img src={fortMatic}  height="150px"  alt="Fortmatic" />
+                            <p>Fortmatic</p>
+                        </div>
+                    </Col>
 
-                <Col xs={12} md={4}>
-                    <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
-                        Autre
-                    </div>
-                </Col>
-
+                    <Col xs={12} md={4}>
+                        <div className="border border-secondary shadow-lg rounded-lg m-1 p-3 cursor" style={{height: "200px", width: "200px"}}>
+                            Autre
+                        </div>
+                    </Col>
+                
             </Row>    
+            </Link>
         </Container>     
 
 

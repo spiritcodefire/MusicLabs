@@ -52,6 +52,8 @@ const NavBarArtist = () => {
 
                         <Nav.Link className="mx-3" as={Link} to="/MyFans">My Fans</Nav.Link>
 
+                        <Nav.Link className="mx-3" as={Link} to="/verified">Get Verified</Nav.Link>
+
                         <Nav.Link className="mx-3" as={Link} onClick={()=> context.setNavBar(true) } to="/">Deconnexion</Nav.Link>
 
                     </Nav>
