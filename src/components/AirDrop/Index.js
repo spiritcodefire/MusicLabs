@@ -8,7 +8,7 @@ const Index = () => {
     let SelectionAirDrop = DataMusic.filter((item) => {
         return item.AirDrop === true && item.IsActive === true
     });
-      console.log(SelectionAirDrop);
+    //   console.log(SelectionAirDrop);
 
 
     return (

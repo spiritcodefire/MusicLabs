@@ -3,6 +3,8 @@ import './Librairie.css'
 import { Link } from 'react-router-dom'
 import ReactAudioPlayer from "react-audio-player";
 import music from '../../assets/songMjackson.mp3' ;
+import dislike from '../../assets/png/dislike.png';
+import like from '../../assets/png/like.png';
 
 const CardLibrairie = (props) => {
 
@@ -43,8 +45,10 @@ const CardLibrairie = (props) => {
                             </div>
 
                             <div className="col-6">
-                                <div className="mx-1 " style={{fontSize: "12px"}}>time required to launch</div> 
-                                <div className="mx-1">1D 24H 13M</div> 
+                                {/* <div className="mx-1 " style={{fontSize: "12px"}}>time required to launch</div> 
+                                <div className="mx-1">1D 24H 13M</div>  */}
+                                <img src={like} height="30px" alt="like" />
+                                <img src={dislike} className="mt-3" height="30px" alt="dislike" />
                             </div>
 
                         </div>

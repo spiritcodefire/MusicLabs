@@ -10,8 +10,7 @@ const Tetedaffiche = () => {
        let SelectionTeteDaffiche = DataMusic.filter((item) => {
          return item.TeteDaffiche === true && item.IsActive === true
       });
-       console.log(SelectionTeteDaffiche);
-
+      
     return (
         <div className="bg-light" >
            <div className="container-fluid border border-light">

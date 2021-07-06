@@ -6,7 +6,6 @@ export const Context = React.createContext()
 const ContextProvider = (props) => {
     const {children} = props
 
-    const [contextAside, setContextAside] = useState("false")
     const [contextIdReference, setContextIdReference] = useState()
     const [contextStatutEtiquette, setContextStatutEtiquette] = useState()
 
@@ -16,8 +15,7 @@ const ContextProvider = (props) => {
 
 
     const context = {
-        contextAside,
-        setContextAside,
+
         contextIdReference,
         setContextIdReference,
         contextStatutEtiquette,

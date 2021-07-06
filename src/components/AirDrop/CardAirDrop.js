@@ -4,7 +4,7 @@ import ReactAudioPlayer from "react-audio-player";
 import music from '../../assets/songMjackson.mp3' ;
 
 const CardAirDrop = (props) => {
-    console.log(props);
+    // console.log(props);
 
     // const [randomNumber, setRandomNumber ] = useState({ random: 0 })
     // const min = 1;
