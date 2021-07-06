@@ -141,6 +141,7 @@ const NavBar = () => {
                         <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  >Connect Your Wallet</Nav.Link>
 
                         <Nav.Link className="mx-3" as={Link} to="/items" >My items</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/artist" >Artist Interface</Nav.Link>
 
 
                     </Nav>

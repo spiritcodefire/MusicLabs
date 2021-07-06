@@ -26,7 +26,7 @@ import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
 import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'
 import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowdfunding'
 import Charity from './components/APages/InterfaceArtist/Charity/Charity'
-import MyPlaylist from './components/APages/MyPlaylist'
+import MyPlaylist from './components/APages/MyItems/MyPlaylist'
 import MyItems from './components/APages/MyItems/Index'
 
 

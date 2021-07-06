@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import "./Librairie.css"
 import DataMusic from "../../utils/dataMusic" ;
 import MapLibrairie from './MapLibrairie'
+import Boutique from '../../assets/png/boutique.png'
 
 
 const Librairie = () => {
@@ -40,7 +41,9 @@ const Librairie = () => {
     return (
         <div className="container-fluid">
 
-            <div className=" px-4 mx-2 h1">Explore</div>
+            <div className="row justify-content-center">
+                <div className="col-11 h2">Explore <img src={Boutique} alt="boutique" height="40px"/>   </div>
+            </div>
                 <div  className="container p-4 text-white">
                     <div className="row justify-content-between">
 

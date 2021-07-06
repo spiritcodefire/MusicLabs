@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom'
 import ReactAudioPlayer from "react-audio-player";
 import music from '../../assets/songMjackson.mp3' ;
 import dislike from '../../assets/png/dislike.png';
-import like from '../../assets/png/like.png';
+import coeur from '../../assets/png/coeur.png';
 
 const CardLibrairie = (props) => {
 
@@ -16,7 +16,14 @@ const CardLibrairie = (props) => {
                 <Link to={'/librairie/' + props.id}>
 
                     {/* IMAGE HEADER */}
-                    <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0 ,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }} />
+                    <div className="img-fluid" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 230+'px', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0 ,backgroundSize: 'cover', backgroundPosition: "center", borderRadius: '20px 20px 0px 0px' }}>
+                        <div className="row justify-content-end">
+                            <div className="col-auto">
+                                <img src={coeur} className="mr-3" height="60px" alt="like" />
+                            </div>
+                        </div>
+                        
+                    </div>
 
                     {/* CENTER */}
                     
@@ -47,8 +54,9 @@ const CardLibrairie = (props) => {
                             <div className="col-6">
                                 {/* <div className="mx-1 " style={{fontSize: "12px"}}>time required to launch</div> 
                                 <div className="mx-1">1D 24H 13M</div>  */}
-                                <img src={like} height="30px" alt="like" />
-                                <img src={dislike} className="mt-3" height="30px" alt="dislike" />
+
+                               
+
                             </div>
 
                         </div>
