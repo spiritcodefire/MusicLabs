@@ -26,9 +26,11 @@ import Royalties from './components/APages/InterfaceArtist/Royalties/Royalties'
 import MyFans from './components/APages/InterfaceArtist/MyFans/MyFans'
 import Crowdfunding from './components/APages/InterfaceArtist/Crowdfunding/Crowdfunding'
 import Charity from './components/APages/InterfaceArtist/Charity/Charity'
-import MyPlaylist from './components/APages/MyItems/MyPlaylist'
+import MyPlaylist from './components/APages/PageMyPlayList/Index'
 import MyItems from './components/APages/MyItems/Index'
 import Verified from './components/APages/Verified/Index'
+import InvestBig from './components/InvestBig/index'
+import ScrollToTop from './components/ScrollToTop'
 
 
 function App() {
@@ -37,6 +39,7 @@ function App() {
   <Fragment>
     <ContextProvider>
       <BrowserRouter>
+        <ScrollToTop />
 
         {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
         <NavBar />
@@ -69,6 +72,7 @@ function App() {
           <Route path="/verified" exact component={Verified}/>
 
           <Route path="/airdrop/:id" exact component={AirDropBig}/>
+          <Route path="/invest/:id" exact component={InvestBig}/>
           <Route path="/librairie/:id" exact component={LibraireBig}/>
           <Route path="/tetedaffiche/:id" exact component={TeteDafficheBig}/>
           <Route path="/Launch/:id" exact component={LaunchBig}/>

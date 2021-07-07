@@ -19,12 +19,12 @@ const Tetedaffiche = () => {
                   { SelectionTeteDaffiche.slice(0).reverse().map(item => { 
                      return(   
                      
-                           <CardTeteDaffiche
-                              key={item.id}
-                              id={item.id}
-                              NameCreator={item.NameCreator} 
-                              Picture={item.Picture}
-                           />                  
+                        <CardTeteDaffiche
+                           key={item.id}
+                           id={item.id}
+                           NameCreator={item.NameCreator} 
+                           Picture={item.Picture}
+                        />                  
                      )})
                   }
 

@@ -1,6 +1,6 @@
 import React from 'react'
-import CardLibrairie from '../../components/Librairie/CardLibrairie'
-import DataMusic from '../../utils/dataMusic'
+import CardLibrairie from '../../Librairie/CardLibrairie'
+import DataMusic from '../../../utils/dataMusic'
 
     const MapLibrairie = () => {
     return ( 

@@ -1,5 +1,5 @@
 import React from 'react'
-import TeteDafficheNew from './TeteDafficheNew/Index'
+import InvestNew from './TeteDafficheNew/Index'
 
 const index = () => {
     
@@ -8,7 +8,7 @@ const index = () => {
     return (
         
         <>
-          <TeteDafficheNew />
+          <InvestNew />
         </>
         
     )

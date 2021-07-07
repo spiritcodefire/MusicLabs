@@ -18,7 +18,7 @@ const CardAirDrop = (props) => {
     return (
        
             <div className="col-md-3 border cardAirDrop p-0 shadow">
-                <Link to={'/airdrop/' + props.id}>
+                <Link to={'/invest/' + props.id}>
                     {/* HEADER */}
                     <div className="img-fluid imgBorderRadius" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 35+'vh', width: 100+'%',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
                     
