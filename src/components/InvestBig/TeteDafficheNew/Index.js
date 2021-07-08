@@ -15,7 +15,7 @@ const Index = () => {
     const [liked, setLiked] = React.useState(false)
     const [activity, setActivity] = React.useState(false)
     const [folowing, setFolowing] = React.useState(false)
-
+    
 
     function dispatchNav(selectedKey) {
 

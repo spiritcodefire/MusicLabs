@@ -1,7 +1,7 @@
 import React from 'react'
 import Nav from 'react-bootstrap/Nav'
 import OnSaleComponent from './OnSale'
-import Table from 'react-bootstrap/Table'
+
 import imgPlaylist from '../../../assets/music.JPG'
 import "./MyItems.css"
 import ComponentLiked from './Liked'
@@ -76,6 +76,7 @@ const Index = () => {
 
                     {Flow && <OnSaleComponent  />}
                     {Liked && <ComponentLiked  />}
+                    { Explore  && <OnSaleComponent />}
                     {Collection && <img src={imgPlaylist} alt="" /> }
             
                 </div>

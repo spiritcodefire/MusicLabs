@@ -4,11 +4,20 @@ import FormControl from 'react-bootstrap/FormControl'
 
 const Renta = () => {
     const [state, setstate] = useState('')
-    console.log(state);
+    const [numberOfArtist] = React.useState(100000)
+   
+
+    if (state) {
+      var resultat =  state * 100 / numberOfArtist
+    }
+    
+
+    
     return (
         <div>
             <div className="container" style={{height: "80vh"}}>
                 <h1>Invest in an Artist</h1>
+                <h4 className="my-3">Exemple L'artist veut se faire crownfondé à hauteur de : {numberOfArtist}$ </h4>
                 <p className="h5">how much do you want to invest?</p>
                 <InputGroup size="lg">
                     <InputGroup.Prepend>
@@ -20,8 +29,10 @@ const Renta = () => {
                 
                 {state && 
                     <div>
-                        <h4>La somme que vous recevrez sera </h4>
-                        {state*2.5/100}
+                        
+                        <h4>Vous recevrez {resultat} % des royalties</h4>
+                        {/* {state*2.5/100} */}
+                        
                     </div>
                 }
             </div>       

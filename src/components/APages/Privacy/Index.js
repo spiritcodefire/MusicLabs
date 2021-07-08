@@ -1,4 +1,6 @@
 import React from 'react'
+import Image from '../../../assets/oursPolaire.jpg'
+
 
 const Index = () => {
     return (
@@ -10,13 +12,13 @@ const Index = () => {
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
-                <br /> <br /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
+               <img src={Image} className="float-left my-4 mr-4" alt="" /> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
-              <br /> <br />  Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
                 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Earum nam incidunt pariatur deserunt adipisci architecto eveniet repudiandae rerum, porro vel quos! Quasi quas labore suscipit sint, facere consectetur dolorum fuga.
