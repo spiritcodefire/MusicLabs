@@ -28,7 +28,8 @@
     "reactjs-media": "^1.5.1",
     "request": "^2.88.2",
     "video-react": "^0.14.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "web3": "^1.4.0"
   },
   "scripts": {
     "start": "react-scripts start",

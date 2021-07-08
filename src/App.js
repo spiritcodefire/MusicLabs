@@ -33,60 +33,62 @@ import InvestBig from './components/InvestBig/index'
 import ScrollToTop from './components/ScrollToTop'
 import Therme from './components/APages/Therme/Index'
 import Privacy from './components/APages/Privacy/Index'
-import Metamask from './components/APages/ConnectionMetamask/index'
+import Metamask from './components/APages/ConnectionMetamask/Index'
+import {StoreProvider} from './hooks/Store'
 
 
 function App() {
 
   return (
   <Fragment>
-    <ContextProvider>
-      <BrowserRouter>
-        <ScrollToTop />
+    <StoreProvider>
+      <ContextProvider>
+        <BrowserRouter>
+          <ScrollToTop />
 
-        {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
-        <NavBar />
-        
-        {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST FALSE */}
-        <NavBarArtist />
-
-        <Switch>
+          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
+          <NavBar />
           
-          <Route path="/" exact component={Home}/>
+          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST FALSE */}
+          <NavBarArtist />
 
-          <Route path="/FundArtist" exact component={FundArtist}/>
-          <Route path="/library" exact component={library}/>
-          
-          <Route path="/AdminArtist" exact component={AdminArtist}/>
-          <Route path="/CountDown" exact component={CountDown}/>
-          <Route path="/create" exact component={Create}/>
-          <Route path="/Playlist" exact component={MyPlaylist}/>
-          <Route path="/artist" exact component={Artist}/>
-          <Route path="/Signup" exact component={Signup}/>
-          <Route path="/metamask" exact component={Metamask}/>
+          <Switch>
+            
+            <Route path="/" exact component={Home}/>
 
-          <Route path="/interfaceArtist" exact component={CreateSingle}/>
-          <Route path="/Royalties" exact component={Royalties}/>
-          <Route path="/MyFans" exact component={MyFans}/>
-          
-          <Route path="/createalbum" exact component={CreateAlbum}/>
-          <Route path="/Crowdfunding" exact component={Crowdfunding}/>
-          <Route path="/Charity" exact component={Charity}/>
-          <Route path="/Items" exact component={MyItems}/>
-          <Route path="/verified" exact component={Verified}/>
-          <Route path="/Privacy" exact component={Privacy}/>
-          <Route path="/Therme" exact component={Therme}/>
+            <Route path="/FundArtist"       exact component={FundArtist}/>
+            <Route path="/library"          exact component={library}/>
+            <Route path="/AdminArtist"      exact component={AdminArtist}/>
+            <Route path="/CountDown"        exact component={CountDown}/>
+            <Route path="/create"           exact component={Create}/>
+            <Route path="/Playlist"         exact component={MyPlaylist}/>
+            <Route path="/artist"           exact component={Artist}/>
+            <Route path="/Signup"           exact component={Signup}/>
+            <Route path="/metamask"         exact component={Metamask}/>
 
-          <Route path="/airdrop/:id" exact component={AirDropBig}/>
-          <Route path="/invest/:id" exact component={InvestBig}/>
-          <Route path="/librairie/:id" exact component={LibraireBig}/>
-          <Route path="/tetedaffiche/:id" exact component={TeteDafficheBig}/>
-          <Route path="/Launch/:id" exact component={LaunchBig}/>
+            <Route path="/interfaceArtist"  exact component={CreateSingle}/>
+            <Route path="/Royalties"        exact component={Royalties}/>
+            <Route path="/MyFans"           exact component={MyFans}/>
+            
+            <Route path="/createalbum"      exact component={CreateAlbum}/>
+            <Route path="/Crowdfunding"     exact component={Crowdfunding}/>
+            <Route path="/Charity"          exact component={Charity}/>
+            <Route path="/Items"            exact component={MyItems}/>
+            <Route path="/verified"         exact component={Verified}/>
+            <Route path="/Privacy"          exact component={Privacy}/>
+            <Route path="/Therme"           exact component={Therme}/>
 
-        </Switch>
-        <Footer />
-      </BrowserRouter>
-    </ContextProvider>
+            <Route path="/airdrop/:id"      exact component={AirDropBig}/>
+            <Route path="/invest/:id"       exact component={InvestBig}/>
+            <Route path="/librairie/:id"    exact component={LibraireBig}/>
+            <Route path="/tetedaffiche/:id" exact component={TeteDafficheBig}/>
+            <Route path="/Launch/:id"       exact component={LaunchBig}/>
+
+          </Switch>
+          <Footer />
+        </BrowserRouter>
+      </ContextProvider>
+    </StoreProvider>
   </Fragment>
   );
 }
