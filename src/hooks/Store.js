@@ -5,7 +5,6 @@ const initialState = {
     message: "",
     adress: null, 
     balance: 0,
-
 };
 
 const reducer = (state, action ) => {
