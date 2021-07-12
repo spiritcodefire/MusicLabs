@@ -6,6 +6,7 @@ import imgPlaylist from '../../../assets/music.JPG'
 import "./MyItems.css"
 import ComponentLiked from './Liked'
 
+
 const Index = () => {
     const [Liked, setLiked] = React.useState(true)
     const [Collection, setCollection] = React.useState(false)

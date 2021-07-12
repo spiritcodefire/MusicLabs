@@ -54,8 +54,8 @@ function App() {
         </p>
         {address && (
           <>
-            <p> Your account: {address}</p>
-            <p> Balance: {balance} </p>
+            <p className="text-dark"> Your account: {address}</p>
+            <p className="text-dark"> Balance: {balance} </p>
           </>
             ) 
         }
@@ -87,7 +87,7 @@ function App() {
             variant="outlined"
             color="default"
           >
-            
+
             Send Crypto
           </Button>
         </form>

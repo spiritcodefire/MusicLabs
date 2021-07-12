@@ -2,16 +2,14 @@ import React from 'react'
 import Accordion from './Accordion'
 import "./product.css"
 import dataMusic from '../../utils/dataMusic'
+import MultiOption from './MultOption'
 
-const index = (props) => {
+const index = () => {
     
-    // let IdSelected = props.match.params.id
-    // const MusicById = dataMusic.find(data=> data.id == IdSelected)  // récupère ce qui suit mon url
-    // console.log(MusicById);
 
     return (
         <div>
-            <div className="container-fluid bg-info">
+            <div className="container-fluid bg-light">
                 <div className="row justify-content-center">
 
                     <div className="col-sm-12 col-md-8" style={{height: "800px"}}> 
@@ -20,14 +18,14 @@ const index = (props) => {
 
                     <div className="col-sm-12 col-md-4">
                         <div className="mt-5">
+
                             <div className="container-fluid">
                                 <div className="row">
-                                    {/* <div className="col-8 border border-white"><h1>{MusicById.NameMusic}</h1></div> */}
                                     <h1>LIBRARY</h1>
-                                    <div className="col-4 ">bouton coeur, btn....</div>
                                 </div>
                             </div>
-                            <p>Le launch c'est toutes les nft's music ou toutes les unités ne sont pas encore vendu </p>
+
+                            <p>La Librairie c'est la "MarketPlace" de MusicLabs</p>
                            <p> Highest bid PRIX </p> 
                            <p> DESCRIPTION </p> 
                             <div className="row">
@@ -36,7 +34,7 @@ const index = (props) => {
                                     <p className="text-secondary font-weight-bold ">Creator</p>
                                     <div className="row">
                                         <div className="col-3"><div className="img-fluid rounded-circle m-4 ml-n2 mt-n1" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?crypto`})`, height: 50+'px', width: 50+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} /></div>
-                                        {/* <div className="col-9">{MusicById.NameCreator}</div> */}
+                                        <div className="col-9"> CREATOR</div>
                                     </div>
                                 </div>
 
@@ -50,7 +48,9 @@ const index = (props) => {
 
                             </div>
                         </div>
-                        <Accordion />
+                        
+
+                        <MultiOption />
                         <hr/>
                         <div className="row" style={{height: '15vh'}}>
 
@@ -67,26 +67,14 @@ const index = (props) => {
 
                             </div>
 
-                            <div className="col-6">
-
-                                <div  className="font-weight-bold text-white text-center p-3" style={{
-                                        borderRight: "1px #ececec solid",
-                                        border: 'grey 1px solid',
-                                        borderRadius: '48px',
-                                        backgroundColor: 'black',}}
-                                    >
-                                        Depuis 2H 24 Min 365 Sec
-                                    </div>
-                            </div>  
-
-                            <div className="col-12 mt-3">
+                            <div className="col-6 ">
 
                                 <div className="font-weight-bold text-center p-3 btnBids" style={{
                                     borderRadius: '48px',
                                     backgroundColor: 'rgba(0, 102, 255, 0.15)',
                                     color: 'rgb(0, 102, 255)'
                                     }}>
-                                     <h6>il reste <span className="text-danger">28</span>  particule disponible</h6>   
+                                     <h6>Place a Bids</h6>   
                                 </div>
                                 
                             </div>
