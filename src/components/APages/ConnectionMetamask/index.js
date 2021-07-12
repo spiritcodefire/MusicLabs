@@ -6,7 +6,7 @@ import { Button, TextField } from "@material-ui/core";
 import "./ConnectionMetamask.css";
 import EthLogo from "../../../assets/png/ethereum.png";
 
-function App() {
+function Index() {
   const { balance, address, message, setAddress, setBalance } = useStoreApi();
   const web3 = UseWeb3();
 
@@ -96,7 +96,7 @@ function App() {
   );
 }
 
-export default App;
+export default Index;
 
 
 
