@@ -33,7 +33,7 @@ import InvestBig from './components/InvestBig/index'
 import ScrollToTop from './components/ScrollToTop'
 import Therme from './components/APages/Therme/Index'
 import Privacy from './components/APages/Privacy/Index'
-import Metamask from './components/APages/ConnectionMetamask/Index'
+import Metamask from './components/APages/ConnectionMetamask/ConnectionMetamask'
 import {StoreProvider} from './hooks/Store'
 
 

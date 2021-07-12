@@ -6,7 +6,7 @@ import { Button, TextField } from "@material-ui/core";
 import "./ConnectionMetamask.css";
 import EthLogo from "../../../assets/png/ethereum.png";
 
-function Index() {
+function ConnectionMetamask() {
   const { balance, address, message, setAddress, setBalance } = useStoreApi();
   const web3 = UseWeb3();
 
@@ -96,7 +96,7 @@ function Index() {
   );
 }
 
-export default Index;
+export default ConnectionMetamask;
 
 
 
