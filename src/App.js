@@ -35,6 +35,7 @@ import Therme from './components/APages/Therme/Index'
 import Privacy from './components/APages/Privacy/Index'
 import Metamask from './components/APages/ConnectionMetamask/ConnectionMetamask'
 import {StoreProvider} from './hooks/Store'
+import Test from './components/APages/Test/Test'
 
 
 function App() {
@@ -46,10 +47,10 @@ function App() {
         <BrowserRouter>
           <ScrollToTop />
 
-          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
+          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST FALSE */}
           <NavBar />
           
-          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST FALSE */}
+          {/* NE SAFFICHERA QUE SI CONTEXT.NAVBAR EST TRUE */}
           <NavBarArtist />
 
           <Switch>
@@ -65,6 +66,7 @@ function App() {
             <Route path="/artist"           exact component={Artist}/>
             <Route path="/Signup"           exact component={Signup}/>
             <Route path="/metamask"         exact component={Metamask}/>
+            <Route path="/Test"             exact component={Test}/>
 
             <Route path="/interfaceArtist"  exact component={CreateSingle}/>
             <Route path="/Royalties"        exact component={Royalties}/>

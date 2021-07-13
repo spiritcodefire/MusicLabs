@@ -16,7 +16,7 @@ const Home = () => {
     }, [])
 
     return (
-        <>
+        <div  >
             {/* <div className="">
                 <ReactVideo
                     src={Video}
@@ -41,7 +41,7 @@ const Home = () => {
 
             <Invest />
 
-        </>
+        </div>
     )
 }
 export default Home

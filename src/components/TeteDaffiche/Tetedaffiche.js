@@ -12,7 +12,7 @@ const Tetedaffiche = () => {
       });
       
     return (
-        <div className="bg-light" >
+        <div className="" >
            <div className="container-fluid border border-light">
                <div className="row justify-content-center">
 

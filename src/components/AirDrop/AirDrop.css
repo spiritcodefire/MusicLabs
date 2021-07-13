@@ -18,7 +18,9 @@
 } */
 
 .footerCardAirDrop{
-    background-color: black;
+    background-color: #1ae0df;
+    background-image: linear-gradient(to bottom right, #7f00ff , #ea06b1);
     height: 12vh;
     border-radius: 0px 0px 20px 20px;
 }
+

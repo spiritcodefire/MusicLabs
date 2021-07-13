@@ -41,8 +41,8 @@ const CardLibrairie = (props) => {
                     
 
                     {/* FOOTER */}
-                    <div className="p-2 text-white" style={{background: "black" , height: "100px", borderRadius: "0px 0px 20px 20px"}}>
-                        
+                    <div className="p-2 text-white" style={{background: "#a9e418" , height: "100px", borderRadius: "0px 0px 20px 20px", backgroundImage: "linear-gradient(to bottom right, #a9e418 , #00a7a3)"  }}>
+
                         {/* <p >Prix de la part/ Nombre de part</p> */}
                         <div className="row justify-content-between">
 

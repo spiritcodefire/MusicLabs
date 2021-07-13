@@ -90,7 +90,7 @@ const NavBar = () => {
     {!context.NavBar &&
 
         <div className="sticky-top">
-            <Navbar bg="dark" expand="lg">
+            <Navbar bg="light" expand="lg">
 
                 <Navbar.Brand > 
                     <div className="row">
@@ -108,19 +108,20 @@ const NavBar = () => {
 
                     <Nav className="mr-auto mx-5">
 
-                        <Nav.Link className="mx-3" as={Link} to="/playlist">My PlayList</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/playlist"> <div className="text-dark">My PlayList</div> </Nav.Link>
 
                         {/* <Nav.Link className="mx-3" as={Link} to="/Launch">Launch</Nav.Link> */}
 
                         {/* <Nav.Link className="mx-3" as={Link} to="/library">library</Nav.Link> */}
 
-                        <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  >Connect Your Wallet</Nav.Link>
+                        <Nav.Link className="mx-3" onClick={() => setModalShow(true)}  ><div className="text-dark">Connect Your Wallet</div></Nav.Link>
 
-                        <Nav.Link className="mx-3" as={Link} to="/items" >My items</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/items" ><span className="text-dark">My items</span> </Nav.Link>
 
-                        <Nav.Link className="mx-3" as={Link} to="/artist" >Artist Interface</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/artist" > <span className="text-dark">Artist Interface</span> </Nav.Link>
 
-                        <Nav.Link className="mx-3" as={Link} to="/metamask" >Connect Metamask</Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/metamask" > <span className="text-dark">Connect Metamask</span></Nav.Link>
+                        <Nav.Link className="mx-3" as={Link} to="/Test" >Test</Nav.Link>
 
                     </Nav>
 

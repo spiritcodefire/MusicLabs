@@ -11,7 +11,7 @@ const CardLancement = (props) => {
 
     return (
         <>
-            <div className="col-sm-12 col-md-2 m-1 shadow p-0" style={{minHeight: '400px',  borderRadius: "0px 0px 20px 20px"}}>  
+            <div className="col-sm-12 col-md-2 m-1  p-0 " style={{minHeight: '400px',  borderRadius: "0px 0px 20px 20px"}}>  
                 <Link to={'/launch/' + props.id}>
                     
                     {/* IMAGE HEADER */}
@@ -28,7 +28,9 @@ const CardLancement = (props) => {
                     </div>
 
                     {/* FOOTER */}
-                    <div className="p-2 text-white" style={{background: "black" , borderRadius: "0px 0px 20px 20px"}}>
+                    <div className="p-2 text-white" style={{background: "black" , borderRadius: "0px 0px 20px 20px" ,  backgroundColor: "#1ae0df", 
+                    backgroundImage: "linear-gradient(to right, #1ae0df , #1e58f7 )" }}>
+                    
 
                         {/* <p >Prix de la part/ Nombre de part</p> */}
                         <div className="row justify-content-between">
