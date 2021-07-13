@@ -12,7 +12,7 @@ const CardLibrairie = (props) => {
    
     return (
         <>
-            <div className="col-md-2 CardLancement p-0 m-1 my-3 border shadow">  
+            <div className="col-md-2 CardLancement p-0 m-1 my-3 ">  
                 <Link to={'/librairie/' + props.id}>
 
                     {/* IMAGE HEADER */}

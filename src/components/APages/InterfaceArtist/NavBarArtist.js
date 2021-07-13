@@ -18,18 +18,16 @@ const NavBarArtist = () => {
     return (
         <>
             { context.NavBar && 
-            <Navbar bg="warning" expand="lg">
+            <Navbar bg="dark" expand="lg">
 
                 <Link to="/interfaceArtist">
                     <Navbar.Brand > 
-                        <div className="row">
+                        <div className="row justify-content-center">
 
                             <div style={{fill: 'white'}} className="col-3">
                                <img src={logoMusicLabs} height="50px" alt="logo music labs" />
                             </div>
-                            <div className="col-6 text-dark">
-                                 Interface Artist
-                            </div>
+                          
                            
                         </div>
                         
