@@ -12,7 +12,7 @@ const Home = () => {
     const context = useContext(Context)
 
     useEffect(() => {
-        context.setNavBar(true)
+        context.setNavBar(false)
     }, [])
 
     return (

@@ -11,7 +11,7 @@ const ContextProvider = (props) => {
 
 
     const [stateCommande, setstateCommande] = useState()
-    const [NavBar, setNavBar] = useState(true)
+    const [NavBar, setNavBar] = useState(false)
 
 
     const context = {

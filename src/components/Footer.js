@@ -6,11 +6,11 @@ import { Link } from 'react-router-dom' ;
 const Footer = () => {
   
     const context = React.useContext(Context)
-      console.log(context.NavBar);
+   
 
     return (
         <>  
-            {context.NavBar && 
+            {!context.NavBar && 
             
                 <div className="container-fluid text-white bg-dark mt-5 ">
                     <div className="row justify-content-center">

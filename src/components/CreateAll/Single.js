@@ -13,7 +13,7 @@ const Single = () => {
     const [airDrop, setAirDrop] = React.useState(false)
 
     React.useEffect(() => {
-        context.setNavBar(false)
+        context.setNavBar(true)
     }, [])
 
     function ActiveAirDrop() {
