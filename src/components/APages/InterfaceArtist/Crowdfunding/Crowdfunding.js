@@ -19,23 +19,24 @@ const Crowdfunding = () => {
                         <h2>what is this ?</h2>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quos harum, veniam voluptatibus in eligendi ullam nostrum eius, corporis soluta vel maxime, mollitia esse cumque quisquam amet quaerat assumenda? Ut, accusantium!</p>
                         <h2 className="text-center mt-3">How much percentage you offer ?</h2>
-                            <InputGroup size="lg">
-                                <InputGroup.Prepend>
-                                    <InputGroup.Text >%</InputGroup.Text>
-                                </InputGroup.Prepend>
-                                <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
-                            </InputGroup>
-                        <h2 className="text-center mt-3">how much is this percentage worth of money ?</h2>
-                            <InputGroup size="lg">
-                                <InputGroup.Prepend>
-                                    <InputGroup.Text >$</InputGroup.Text>
-                                </InputGroup.Prepend>
-                                <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
-                            </InputGroup>
+                        <InputGroup size="lg">
+                            <InputGroup.Prepend>
+                                <InputGroup.Text >%</InputGroup.Text>
+                            </InputGroup.Prepend>
+                            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+                        </InputGroup>
+                        <h2 className="text-center mt-3">How much is this percentage worth of money ?</h2>
+                        <InputGroup size="lg">
+                            <InputGroup.Prepend>
+                                <InputGroup.Text >$</InputGroup.Text>
+                            </InputGroup.Prepend>
+                            <FormControl aria-label="Large" aria-describedby="inputGroup-sizing-sm" />
+                        </InputGroup>
+                      
 
-                            <p>look at examples </p>
-                            <h1>Get CrownFunding</h1>
-                        </div>
+                        <p>look at examples </p>
+                        <h1>Get CrownFunding</h1>
+                    </div>
                         
                             <div className="row justify-content-center">
                                 {SelectionLaunch.slice(0,3).reverse().map(item => { 

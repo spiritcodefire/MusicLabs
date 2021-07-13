@@ -11,7 +11,7 @@ const Royalties = () => {
 
                 <div className="row justify-content-center">
                     <div className="col-md-10 col-sm-12 p-3">
-                        <h1 className="my-4">Welcome to your Royalties</h1>
+                        <h1 className="my-4">Welcome to your  <u className="font-weight-bold">Royalties</u> </h1>
                         <p className="text-secondary h5">Choose what you will do with your royalties</p>
                     </div>
                 </div>
@@ -36,8 +36,18 @@ const Royalties = () => {
                         </Link>
                     </div>
 
+                    <div className="col-md-10 col-sm-12 rounded-spe p-4 m-1 text-dark" style={{height: "300px"}}>
+                        <Link to="/Crowdfunding">
+                            <h3>Gestion </h3>
+                            <figure className="text-center text-dark">
+                                <img src={Undraw2} height="200px" alt="" />
+                            </figure>
+                        </Link>
+                    </div>
+
                 </div>
                 </div>
+
         </div>
     )
 }

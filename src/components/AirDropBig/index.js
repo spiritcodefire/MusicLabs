@@ -11,14 +11,14 @@ const index = (props) => {
 
     return (
         <div>
-            <div className="container-fluid">
+            <div className="container-fluid bg-light">
                 <div className="row justify-content-center">
 
-                    <div className="col-sm-12 col-md-8  bg-dark" style={{height: "800px"}}>
+                    <div className="col-sm-12 col-md-8  " style={{height: "800px"}}>
                             <div className="img-fluid " style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?singer`})`, height: 80+'vh',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
                     </div>
 
-                    <div className="col-sm-12 col-md-4 bg-dark text-white">
+                    <div className="col-sm-12 col-md-4  text-dark">
                         <div className="mt-5">
                             <div className="container-fluid ">
                                 <div className="row">
@@ -27,7 +27,7 @@ const index = (props) => {
                                     <h1>AIR DROP</h1>
                                 </div>
                             </div>
-                            <p>Le launch c'est toutes les nft's music ou toutes les unités ne sont pas encore vendu </p>
+                            <p>Les AIR DROP SONT GAGNE EN ECOUTANT OU EN JOUANT A UNE JEU LIé a lartist </p>
                            <p> Highest bid PRIX </p> 
                            <p> DESCRIPTION </p> 
                             <div className="row">
@@ -77,7 +77,7 @@ const index = (props) => {
                                 </div>
 
                             </div>
-                            <p className='text-white'>quand je click sur Listen : sois je suis connecté et ça fonctionne, soit je ne suis pas connecter à mon wallet et ça demande la connexion </p>
+                            <p className='text-dark'>quand je click sur Listen : sois je suis connecté et ça fonctionne, soit je ne suis pas connecter à mon wallet et ça demande la connexion </p>
                         </div>
                     </div>
                 </div>
