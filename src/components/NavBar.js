@@ -121,7 +121,10 @@ const NavBar = () => {
                         <Nav.Link className="mx-3" as={Link} to="/artist" > <span className="text-dark">Artist Interface</span> </Nav.Link>
 
                         <Nav.Link className="mx-3" as={Link} to="/metamask" > <span className="text-dark">Connect Metamask</span></Nav.Link>
+
                         <Nav.Link className="mx-3" as={Link} to="/Test" >Test</Nav.Link>
+
+                        <Nav.Link className="mx-3" as={Link} to="/jeux" >jeux</Nav.Link>
 
                     </Nav>
 
