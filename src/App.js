@@ -36,7 +36,7 @@ import Privacy from './components/APages/Privacy/Index'
 import Metamask from './components/APages/ConnectionMetamask/ConnectionMetamask'
 import {StoreProvider} from './hooks/Store'
 import Test from './components/APages/Test/Test'
-import Jeux from './components/APages/Jeux/Index'
+import Games from './components/APages/Games/Games'
 
 
 function App() {
@@ -68,7 +68,7 @@ function App() {
             <Route path="/Signup"           exact component={Signup}/>
             <Route path="/metamask"         exact component={Metamask}/>
             <Route path="/Test"             exact component={Test}/>
-            <Route path="/Jeux"             exact component={Jeux}/>
+            <Route path="/Jeux"             exact component={Games}/>
 
             <Route path="/interfaceArtist"  exact component={CreateSingle}/>
             <Route path="/Royalties"        exact component={Royalties}/>
