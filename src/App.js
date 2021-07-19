@@ -56,7 +56,7 @@ function App() {
 
           <Switch>
             
-            <Route path="/" exact component={Home}/>
+            <Route path="/"                 exact component={Home}/>
 
             <Route path="/FundArtist"       exact component={FundArtist}/>
             <Route path="/library"          exact component={library}/>
@@ -69,11 +69,9 @@ function App() {
             <Route path="/metamask"         exact component={Metamask}/>
             <Route path="/Test"             exact component={Test}/>
             <Route path="/Jeux"             exact component={Games}/>
-
             <Route path="/interfaceArtist"  exact component={CreateSingle}/>
             <Route path="/Royalties"        exact component={Royalties}/>
             <Route path="/MyFans"           exact component={MyFans}/>
-            
             <Route path="/createalbum"      exact component={CreateAlbum}/>
             <Route path="/Crowdfunding"     exact component={Crowdfunding}/>
             <Route path="/Charity"          exact component={Charity}/>

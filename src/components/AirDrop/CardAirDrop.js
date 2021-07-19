@@ -26,6 +26,7 @@ const CardAirDrop = (props) => {
                     <div className="bodyCardAirDrop">
                         <h5 className="mx-3">{props.NameCreator}</h5>
                         <div className="row justify-content-start mx-1">
+
                             <div className="col-2 ">
                                 <div className="img-fluid rounded-circle" style={{backgroundImage: `url(${`https://source.unsplash.com/random/${Math.ceil(Math.random() * 1000 + 300)}x350/?person`})`, height: 40+'px', width: 40+'px',  backgroundRepeat: 'no-repeat', left: 0,backgroundSize: 'cover', backgroundPosition: "center" }} />
                             </div>
@@ -34,13 +35,13 @@ const CardAirDrop = (props) => {
                                 {props.NameMusic}
                             </div>
 
-                            
                             <button className="font-weight-bold text-center p-3 mt-n2 btnBids" style={{
                                     borderRadius: '48px',
                                     backgroundColor: 'rgba(0, 102, 255, 0.15)',
                                     color: 'rgb(0, 102, 255)'
                                     }}>Get my Nft
                             </button>
+
                         </div>
                         <div className="text-center" style={{backgroundColor: "#F1F3F4"}}>
                                 <ReactAudioPlayer
@@ -63,6 +64,7 @@ const CardAirDrop = (props) => {
                                 <h5 className="text-secondary">Since</h5>
                                 <h5 className="text-white">10M 24Sec</h5>
                             </div>
+                            
                             <div className="col-6">
                                 <h5 className="text-secondary">remains to be won</h5>
                                 <h5 className="text-white">4888 </h5>

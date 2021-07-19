@@ -2,6 +2,7 @@ import React from 'react'
 import Accordion from './Accordion'
 import "./AirDropBig.css"
 import dataMusic from '../../utils/dataMusic'
+import { Link } from 'react-router-dom' ;
 
 const index = (props) => {
     
@@ -68,13 +69,15 @@ const index = (props) => {
                             </div>
 
                             <div className="col-6">
-
-                                <div className="font-weight-bold text-center p-3 btnBids" style={{
-                                    borderRadius: '48px',
-                                    backgroundColor: 'rgba(0, 102, 255, 0.15)',
-                                    color: 'rgb(0, 102, 255)'
-                                    }}>Get my Nft
-                                </div>
+                                
+                                <Link to="/Jeux">
+                                    <div className="font-weight-bold text-center p-3 btnBids" style={{
+                                        borderRadius: '48px',
+                                        backgroundColor: 'rgba(0, 102, 255, 0.15)',
+                                        color: 'rgb(0, 102, 255)'
+                                        }}>Get my Nft
+                                    </div>
+                                </Link>
 
                             </div>
                             <p className='text-dark'>quand je click sur Listen : sois je suis connecté et ça fonctionne, soit je ne suis pas connecter à mon wallet et ça demande la connexion </p>
